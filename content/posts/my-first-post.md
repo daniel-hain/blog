@@ -2,7 +2,7 @@
 title: "My First Post"
 date: 2019-10-22T16:52:36+02:00
 draft: false
-js: /js/juniper.min.js
+js: js/juniper.min.js
 css: https://codemirror.net/theme/monokai.css
 ---
 
@@ -17,7 +17,7 @@ for token in doc:
     print(token.text, token.pos_)
 </pre>
 
-        #<script src="dist/juniper.min.js"></script>
+<script src="js/juniper.min.js"></script>
 <script>
     new Juniper({
     repo: 'ines/spacy-io-binder'
