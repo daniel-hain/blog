@@ -2,8 +2,11 @@
 title: "My First Post"
 date: 2019-10-22T16:52:36+02:00
 draft: false
+js: /js/juniper.min.js
+
 ---
 stuff
+
 
 <pre data-executable>
 print('This is a demo of Juniper.')
@@ -22,13 +25,3 @@ doc = nlp(u"This is a sentence.")
 for token in doc:
     print(token.text, token.pos_)
 </pre>
-
-<script src="js/juniper.min.js"></script>
-<script>
-    new Juniper({
-    repo: 'ines/spacy-io-binder'
-    });
-    // listen to status updates
-    document.addEventListener('juniper', ev =>
-    console.log('Status:', ev.detail.status))
-</script>
