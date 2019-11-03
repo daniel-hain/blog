@@ -2,26 +2,24 @@
 title: "My First Post"
 date: 2019-10-22T16:52:36+02:00
 draft: false
-js: /js/juniper.min.js
 
 ---
 stuff
 
 
-<pre data-executable>
-print('This is a demo of Juniper.')
-text1 = "It's a JS library for running code in your "
-text2 = "browser, via Jupyter kernels provided by {}."
-print(text1 + text2.format('Binder'))
-</pre>
 
 <pre data-executable data-theme="monokai">
-# it starts a Docker container from a pre-built image
-# so you can pre-install any libraries
-import spacy
+#start binder-docker
 
-nlp = spacy.load('en_core_web_sm')  # spaCy models!
-doc = nlp(u"This is a sentence.")
-for token in doc:
-    print(token.text, token.pos_)
+import pandas as pd
+
+raw_data = {'first_name': ['Jason', 'Molly', 'Tina', 'Jake', 'Amy'], 
+        'last_name': ['Miller', 'Jacobson', 'Ali', 'Milner', 'Cooze'], 
+        'age': [42, 52, 36, 24, 73], 
+        'preTestScore': [4, 24, 31, 2, 3],
+        'postTestScore': [25, 94, 57, 62, 70]}
+df = pd.DataFrame(raw_data, columns = ['first_name', 'last_name', 'age', 'preTestScore', 'postTestScore'])
+
+df
+
 </pre>
