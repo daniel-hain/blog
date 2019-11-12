@@ -46,7 +46,8 @@ sequences = tokenizer.texts_to_sequences(df['text'])
 This will turn the tweets into sequences of indices. From here, you just need to “pad” the sequences (for en easier workflow).
 Each tweet can then look like that:
 
-```array([   0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+```
+array([   0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
@@ -57,6 +58,7 @@ Each tweet can then look like that:
          83,   32,   18,    6,    5, 1168, 1939,   30,  871,   58,    1,
         612], dtype=int32)
 ```
+Here, the tweets were padded to a length of 100 with pre-padding (leading 0s are attached to reach the same length for all tweets).
 
 But what kind of network do you expect me to build?
 
