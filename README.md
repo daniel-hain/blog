@@ -1,26 +1,3 @@
-  
- Demote headings (H1 → H2, etc.)
- HTML headings/IDs
- Wrap HTML
-Help: Docs, Bugs
-<!----- Conversion time: 0.65 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β17
-* Tue Nov 12 2019 04:30:02 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1F7OKPkwEMN_Ntwd659ne2d8qtKXcfCPUdA5VIQ9XePY
------>
-
-
 
 # Trump vs. GPT-2
 
@@ -31,8 +8,7 @@ Deadline: 18/11 - 2019
 
 The site [https://faketrump.ai/](https://faketrump.ai/) is an interesting example of AI-powered fake-text generation. They write:
 
-
-    _We built an artificial intelligence model by fine-tuning [GPT-2](https://openai.com/blog/better-language-models/) to generate tweets in the style of Donald Trump’s Twitter account. After seeing the results, we also built a discriminator that can accurately detect fake tweets 77% of the time — think you can beat our classifier? Try it yourself!_
+_We built an artificial intelligence model by fine-tuning [GPT-2](https://openai.com/blog/better-language-models/) to generate tweets in the style of Donald Trump’s Twitter account. After seeing the results, we also built a discriminator that can accurately detect fake tweets 77% of the time — think you can beat our classifier? Try it yourself!_
 
 GPT-2 is a neural transformer-based model, that has been announced by OpenAI in February 2019 and created considerable discussion because they decided - in contrast to their earlier policies - not to release the mode to the public. Their central argument was that the model could be used to produce fake news, spam and alike too easily. The footnote of the faketrump page reads: “Generating realistic fake text has become much more accessible. We hope to highlight the current state of text generation to demonstrate how difficult it is to discern fiction from reality.”
 
@@ -63,12 +39,11 @@ Having been with us for M2, you may ask: How do I go from text to numerical valu
 
 You can for instance just use the “Tokenizer” that’s part of Keras. 
 
-vocabulary_size = 5000
 
-tokenizer = Tokenizer(num_words= vocabulary_size)
-
-tokenizer.fit_on_texts(df['text'])
-
+        `Lang:python \
+`vocabulary_size = 5000 \
+tokenizer = Tokenizer(num_words= vocabulary_size) \
+tokenizer.fit_on_texts(df['text']) \
 sequences = tokenizer.texts_to_sequences(df['text'])
 
 From here, you just need to “pad” the sequences (for en easier workflow).
@@ -88,7 +63,13 @@ If you want to build such a simple model as a baseline - that’s fine, but we d
 *   You can go even deeper and explore transformer-based models, attention and the more recent 2018-19 stuff. 
 *   BUT: A top-performance can be achieved just using Keras and no fancy NLP stuff. Be creative and use the 100s of tutorials and recipes on the web.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A useful abbreviation. <a href="https://t.co/uGywwvaBE6">pic.twitter.com/uGywwvaBE6</a></p>&mdash; Robin Houston (@robinhouston) <a href="https://twitter.com/robinhouston/status/1193105748374491136?ref_src=twsrc%5Etfw">November 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/M3-Individual0.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/M3-Individual0.jpg "image_tooltip")
+
 
 
 ### Deliverables
@@ -111,4 +92,3 @@ Further process and dates
 *   The peergrade evaluation is due 21/11. Reviewing is part of your performance. Don’t forget that.
 
 <!-- Docs to Markdown version 1.0β17 -->
-
