@@ -1,31 +1,3 @@
-<!----- Conversion time: 0.94 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β17
-* Tue Nov 12 2019 04:43:04 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1F7OKPkwEMN_Ntwd659ne2d8qtKXcfCPUdA5VIQ9XePY
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 1.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 # Trump vs. GPT-2
 
 
@@ -68,7 +40,7 @@ You can for instance just use the “Tokenizer” that’s part of Keras.
 
 
 ```
-    lang:python
+
 vocabulary_size = 5000
 tokenizer = Tokenizer(num_words= vocabulary_size)
 tokenizer.fit_on_texts(df['text'])
@@ -98,7 +70,7 @@ If you want to build such a simple model as a baseline - that’s fine, but we d
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/M3-Individual0.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/M3-Individual0.jpg "image_tooltip")
+![alt_text](https://pbs.twimg.com/media/EI7DWlmXsAAwCte?format=jpg&name=4096x4096)
 
 
 
